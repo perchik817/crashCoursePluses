@@ -70,7 +70,7 @@ int** generateMatrix(int rows, int cols) {
     }
     return nums;
 }
-int** generateRandNums(int** nums, int rows, int cols) {
+void generateRandNums(int** nums, int rows, int cols) {
     random_device rd;    // Создание объекта для генерации случайных чисел
     mt19937 gen(rd());   // Инициализация генератора случайных чисел с использованием случайного устройства
 
@@ -84,7 +84,6 @@ int** generateRandNums(int** nums, int rows, int cols) {
         }
         cout << endl;
     }
-    return nums;
 }
 
 int main()
